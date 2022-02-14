@@ -243,42 +243,90 @@ input[type="radio"] {
 
 .contrareloj {
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.contrareloj:hover{
+  transform: scale(1.05);
 }
 
 .desaparecida {
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+.desaparecida:hover{
+  transform: scale(1.05);
 }
 
 .fiji {
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+.fiji:hover{
+  transform: scale(1.05);
 }
 
 .lovestar {
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.lovestar:hover{
+  transform: scale(1.05);
 }
 
 .mideseodeañonuevo {
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.mideseodeañonuevo:hover{
+  transform: scale(1.05);
 }
 
 .madqst {
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.madqst:hover{
+  transform: scale(1.05);
 }
 
 .numberone {
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.numberone:hover{
+  transform: scale(1.05);
 }
 
 .perreotriste {
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.perreotriste:hover{
+  transform: scale(1.05);
 }
 
 .sueños {
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.sueños:hover{
+  transform: scale(1.05);
 }
 
 .perreowaves {
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.perreowaves:hover{
+  transform: scale(1.05);
 }
 
 /*fin del style musica*/
