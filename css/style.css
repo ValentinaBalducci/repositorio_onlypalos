@@ -3,8 +3,7 @@
   padding: 0;
 }
 
-header {
-  display: flex;
+header{
   align-items: center;
   justify-content: space-between;
 }
@@ -16,23 +15,27 @@ header {
   margin-left: 15px;
 }
 
+.navbar-toggler {
+color: #c71216 !important;
+}
+
 ul li {
-  list-style: none;
-  margin-right: 25px;
-  font-size: 30px;
-  display: inline;
+display: inline;
+margin-right: 25px;
+list-style: none;
 }
 
 a {
-  color: #c71216;
-  text-decoration: none;
+ color :#c71216 !important;
+ font-size: 30px;
+ text-decoration: none;
 }
 
 /*inicio del style index*/
 
 .fondoindex, .fondoartistas, .fondomusica, .fondoop, .fondocontacto{
-  background-image: url(../assets/images/fondo.png);
-  background-size: 100% 100%;
+  background-image: url(../assets/images/fondo.png) ;
+  background-size: 100% 100% ;
 }
 
 
