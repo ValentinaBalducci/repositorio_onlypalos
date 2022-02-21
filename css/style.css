@@ -3,47 +3,57 @@
   padding: 0;
 }
 
-header{
-  align-items: center;
-  justify-content: space-between;
+header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around;
 }
+
 
 .logo {
   margin-top: 10px;
   margin-bottom: 15px;
   margin-right: 10px;
   margin-left: 15px;
+  
 }
 
 .navbar-toggler {
-color: #c71216 !important;
+  color: #c71216 !important;
 }
 
 ul li {
-display: inline;
-margin-right: 25px;
-list-style: none;
+  display: inline;
+  margin-right: 25px;
+  list-style: none;
 }
 
 a {
- color :#c71216 !important;
- font-size: 30px;
- text-decoration: none;
+  color: #c71216 !important;
+  font-size: 30px;
+  text-decoration: none;
 }
 
 /*inicio del style index*/
 
-.fondoindex, .fondoartistas, .fondomusica, .fondoop, .fondocontacto{
-  background-image: url(../assets/images/fondo.png) ;
-  background-size: 100% 100% ;
+.fondoindex,
+.fondoartistas,
+.fondomusica,
+.fondoop,
+.fondocontacto {
+  background-image: url(../assets/images/fondo.png);
+  background-size: 100% 100%;
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28199, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
 
 .tituloUltimosLanzamientos {
   font-size: 55px;
   text-align: center;
   margin: 10px;
-  color: #EFEFEF;
+  color: #efefef;
 }
 
 .ultimosLanzamientos {
@@ -59,7 +69,7 @@ a {
   text-align: center;
   margin-bottom: 30px;
   font-size: 20px;
-  color: #EFEFEF;
+  color: #efefef;
 }
 
 .tema1 {
@@ -86,7 +96,7 @@ a {
   font-size: 55px;
   text-align: center;
   padding: 10px;
-  color: #EFEFEF;
+  color: #efefef;
 }
 
 .artistas {
@@ -103,14 +113,14 @@ a {
 }
 
 h4 {
-  color: #EFEFEF;
+  color: #efefef;
 }
 .betrees {
   border-radius: 20px;
   transition: transform 0.2s;
 }
 
-.betrees:hover{
+.betrees:hover {
   transform: scale(1.05);
 }
 
@@ -118,7 +128,7 @@ h4 {
   border-radius: 20px;
   transition: transform 0.2s;
 }
-.cfaravena:hover{
+.cfaravena:hover {
   transform: scale(1.05);
 }
 
@@ -127,7 +137,7 @@ h4 {
   transition: transform 0.2s;
 }
 
-.izaiah:hover{
+.izaiah:hover {
   transform: scale(1.05);
 }
 
@@ -136,7 +146,7 @@ h4 {
   transition: transform 0.2s;
 }
 
-.meraghice:hover{
+.meraghice:hover {
   transform: scale(1.05);
 }
 
@@ -154,7 +164,7 @@ h4 {
   transition: transform 0.2s;
 }
 
-.tailagar:hover{ 
+.tailagar:hover {
   transform: scale(1.05);
 }
 
@@ -172,7 +182,7 @@ h4 {
   transition: transform 0.2s;
 }
 
-.yungpipe:hover{
+.yungpipe:hover {
   transform: scale(1.05);
 }
 
@@ -190,7 +200,7 @@ h4 {
   transition: transform 0.2s;
 }
 
-.zmokk:hover{
+.zmokk:hover {
   transform: scale(1.05);
 }
 
@@ -202,7 +212,7 @@ h4 {
   text-align: center;
   font-size: 55px;
   padding: 10px;
-  color: #EFEFEF;
+  color: #efefef;
 }
 
 .filtros {
@@ -221,7 +231,7 @@ input[type="radio"] {
   padding: 6px 30px;
   font-size: 30px;
   background: #c71216;
-  color: #EFEFEF;
+  color: #efefef;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -249,7 +259,7 @@ input[type="radio"] {
   transition: transform 0.2s;
 }
 
-.contrareloj:hover{
+.contrareloj:hover {
   transform: scale(1.05);
 }
 
@@ -257,7 +267,7 @@ input[type="radio"] {
   border-radius: 10px;
   transition: transform 0.2s;
 }
-.desaparecida:hover{
+.desaparecida:hover {
   transform: scale(1.05);
 }
 
@@ -265,7 +275,7 @@ input[type="radio"] {
   border-radius: 10px;
   transition: transform 0.2s;
 }
-.fiji:hover{
+.fiji:hover {
   transform: scale(1.05);
 }
 
@@ -274,7 +284,7 @@ input[type="radio"] {
   transition: transform 0.2s;
 }
 
-.lovestar:hover{
+.lovestar:hover {
   transform: scale(1.05);
 }
 
@@ -283,7 +293,7 @@ input[type="radio"] {
   transition: transform 0.2s;
 }
 
-.mideseodeañonuevo:hover{
+.mideseodeañonuevo:hover {
   transform: scale(1.05);
 }
 
@@ -292,7 +302,7 @@ input[type="radio"] {
   transition: transform 0.2s;
 }
 
-.madqst:hover{
+.madqst:hover {
   transform: scale(1.05);
 }
 
@@ -301,7 +311,7 @@ input[type="radio"] {
   transition: transform 0.2s;
 }
 
-.numberone:hover{
+.numberone:hover {
   transform: scale(1.05);
 }
 
@@ -310,7 +320,7 @@ input[type="radio"] {
   transition: transform 0.2s;
 }
 
-.perreotriste:hover{
+.perreotriste:hover {
   transform: scale(1.05);
 }
 
@@ -319,7 +329,7 @@ input[type="radio"] {
   transition: transform 0.2s;
 }
 
-.sueños:hover{
+.sueños:hover {
   transform: scale(1.05);
 }
 
@@ -328,7 +338,7 @@ input[type="radio"] {
   transition: transform 0.2s;
 }
 
-.perreowaves:hover{
+.perreowaves:hover {
   transform: scale(1.05);
 }
 
@@ -345,7 +355,7 @@ input[type="radio"] {
 
 .historia {
   display: flex;
-  
+
   margin-bottom: 30px;
   align-content: center;
   text-align: center;
@@ -357,10 +367,9 @@ input[type="radio"] {
 /*tablet y +*/
 
 @media screen and (min-width: 600px) {
-  .historia{
+  .historia {
     flex-wrap: nowrap;
   }
-  
 }
 
 .imagenlogo {
@@ -396,7 +405,7 @@ input[type="radio"] {
 }
 
 h2 {
-color: #EFEFEF;
+  color: #efefef;
 }
 
 form {
@@ -406,7 +415,7 @@ form {
   text-align: center;
   align-items: center;
   font-size: 20px;
-  color: #EFEFEF;
+  color: #efefef;
 }
 
 input[type="submit"] {
@@ -430,14 +439,13 @@ input[type="reset"] {
 
 body {
   font-family: "Bebas Neue", cursive;
-  
 }
 
 footer {
   justify-content: space-between;
   text-align: center;
   padding: 30px;
-  color: #EFEFEF;
+  color: #efefef;
 }
 .redes {
   font-size: 30px;
