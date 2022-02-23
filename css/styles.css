@@ -1,0 +1,914 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
+body .fondoindex,
+body .fondoartistas,
+body .fondomusica,
+body .fondoop,
+body .fondocontacto {
+  background-image: url(../assets/images/fondo.png);
+  background-size: 100% 100%;
+}
+
+body .fondoindex header,
+body .fondoartistas header,
+body .fondomusica header,
+body .fondoop header,
+body .fondocontacto header {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .fondoindex header .navbar-toggler,
+body .fondoartistas header .navbar-toggler,
+body .fondomusica header .navbar-toggler,
+body .fondoop header .navbar-toggler,
+body .fondocontacto header .navbar-toggler {
+  color: #c71216 !important;
+}
+
+body .fondoindex header .navbar-toggler .navbar-toggler-icon,
+body .fondoartistas header .navbar-toggler .navbar-toggler-icon,
+body .fondomusica header .navbar-toggler .navbar-toggler-icon,
+body .fondoop header .navbar-toggler .navbar-toggler-icon,
+body .fondocontacto header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28199, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+body .fondoindex header li,
+body .fondoartistas header li,
+body .fondomusica header li,
+body .fondoop header li,
+body .fondocontacto header li {
+  display: inline;
+  margin-right: 25px;
+  list-style: none;
+}
+
+body .fondoindex header a,
+body .fondoartistas header a,
+body .fondomusica header a,
+body .fondoop header a,
+body .fondocontacto header a {
+  color: #c71216 !important;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+body .fondoindex .tituloUltimosLanzamientos,
+body .fondoartistas .tituloUltimosLanzamientos,
+body .fondomusica .tituloUltimosLanzamientos,
+body .fondoop .tituloUltimosLanzamientos,
+body .fondocontacto .tituloUltimosLanzamientos {
+  font-size: 55px;
+  text-align: center;
+  margin: 10px;
+  color: #efefef;
+}
+
+body .fondoindex .ultimosLanzamientos,
+body .fondoartistas .ultimosLanzamientos,
+body .fondomusica .ultimosLanzamientos,
+body .fondoop .ultimosLanzamientos,
+body .fondocontacto .ultimosLanzamientos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .fondoindex .ultimosLanzamientos .reproductoryt,
+body .fondoartistas .ultimosLanzamientos .reproductoryt,
+body .fondomusica .ultimosLanzamientos .reproductoryt,
+body .fondoop .ultimosLanzamientos .reproductoryt,
+body .fondocontacto .ultimosLanzamientos .reproductoryt {
+  margin: 20px;
+  width: 330px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #efefef;
+}
+
+body .fondoindex .ultimosLanzamientos .reproductoryt .tema1,
+body .fondoartistas .ultimosLanzamientos .reproductoryt .tema1,
+body .fondomusica .ultimosLanzamientos .reproductoryt .tema1,
+body .fondoop .ultimosLanzamientos .reproductoryt .tema1,
+body .fondocontacto .ultimosLanzamientos .reproductoryt .tema1 {
+  border-radius: 30px;
+}
+
+body .fondoindex .ultimosLanzamientos .reproductoryt .tema2,
+body .fondoartistas .ultimosLanzamientos .reproductoryt .tema2,
+body .fondomusica .ultimosLanzamientos .reproductoryt .tema2,
+body .fondoop .ultimosLanzamientos .reproductoryt .tema2,
+body .fondocontacto .ultimosLanzamientos .reproductoryt .tema2 {
+  border-radius: 30px;
+}
+
+body .fondoindex .ultimosLanzamientos .reproductoryt .tema3,
+body .fondoartistas .ultimosLanzamientos .reproductoryt .tema3,
+body .fondomusica .ultimosLanzamientos .reproductoryt .tema3,
+body .fondoop .ultimosLanzamientos .reproductoryt .tema3,
+body .fondocontacto .ultimosLanzamientos .reproductoryt .tema3 {
+  border-radius: 30px;
+}
+
+body .fondoindex .ultimosLanzamientos .reproductoryt .tema4,
+body .fondoartistas .ultimosLanzamientos .reproductoryt .tema4,
+body .fondomusica .ultimosLanzamientos .reproductoryt .tema4,
+body .fondoop .ultimosLanzamientos .reproductoryt .tema4,
+body .fondocontacto .ultimosLanzamientos .reproductoryt .tema4 {
+  border-radius: 30px;
+}
+
+body .fondoindex .tituloArtistas,
+body .fondoartistas .tituloArtistas,
+body .fondomusica .tituloArtistas,
+body .fondoop .tituloArtistas,
+body .fondocontacto .tituloArtistas {
+  font-size: 55px;
+  text-align: center;
+  padding: 10px;
+  color: #efefef;
+}
+
+body .fondoindex .artistas,
+body .fondoartistas .artistas,
+body .fondomusica .artistas,
+body .fondoop .artistas,
+body .fondocontacto .artistas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .fondoindex .artistas .fotosArtistas,
+body .fondoartistas .artistas .fotosArtistas,
+body .fondomusica .artistas .fotosArtistas,
+body .fondoop .artistas .fotosArtistas,
+body .fondocontacto .artistas .fotosArtistas {
+  margin: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+body .fondoindex .artistas .fotosArtistas h4,
+body .fondoartistas .artistas .fotosArtistas h4,
+body .fondomusica .artistas .fotosArtistas h4,
+body .fondoop .artistas .fotosArtistas h4,
+body .fondocontacto .artistas .fotosArtistas h4 {
+  color: #efefef;
+  margin-top: 10px;
+}
+
+body .fondoindex .artistas .fotosArtistas .betrees,
+body .fondoartistas .artistas .fotosArtistas .betrees,
+body .fondomusica .artistas .fotosArtistas .betrees,
+body .fondoop .artistas .fotosArtistas .betrees,
+body .fondocontacto .artistas .fotosArtistas .betrees {
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .artistas .fotosArtistas .betrees:hover,
+body .fondoartistas .artistas .fotosArtistas .betrees:hover,
+body .fondomusica .artistas .fotosArtistas .betrees:hover,
+body .fondoop .artistas .fotosArtistas .betrees:hover,
+body .fondocontacto .artistas .fotosArtistas .betrees:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .artistas .fotosArtistas .cfaravena,
+body .fondoartistas .artistas .fotosArtistas .cfaravena,
+body .fondomusica .artistas .fotosArtistas .cfaravena,
+body .fondoop .artistas .fotosArtistas .cfaravena,
+body .fondocontacto .artistas .fotosArtistas .cfaravena {
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .artistas .fotosArtistas .cfaravena:hover,
+body .fondoartistas .artistas .fotosArtistas .cfaravena:hover,
+body .fondomusica .artistas .fotosArtistas .cfaravena:hover,
+body .fondoop .artistas .fotosArtistas .cfaravena:hover,
+body .fondocontacto .artistas .fotosArtistas .cfaravena:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .artistas .fotosArtistas .izaiah,
+body .fondoartistas .artistas .fotosArtistas .izaiah,
+body .fondomusica .artistas .fotosArtistas .izaiah,
+body .fondoop .artistas .fotosArtistas .izaiah,
+body .fondocontacto .artistas .fotosArtistas .izaiah {
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .artistas .fotosArtistas .izaiah:hover,
+body .fondoartistas .artistas .fotosArtistas .izaiah:hover,
+body .fondomusica .artistas .fotosArtistas .izaiah:hover,
+body .fondoop .artistas .fotosArtistas .izaiah:hover,
+body .fondocontacto .artistas .fotosArtistas .izaiah:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .artistas .fotosArtistas .meraghice,
+body .fondoartistas .artistas .fotosArtistas .meraghice,
+body .fondomusica .artistas .fotosArtistas .meraghice,
+body .fondoop .artistas .fotosArtistas .meraghice,
+body .fondocontacto .artistas .fotosArtistas .meraghice {
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .artistas .fotosArtistas .meraghice:hover,
+body .fondoartistas .artistas .fotosArtistas .meraghice:hover,
+body .fondomusica .artistas .fotosArtistas .meraghice:hover,
+body .fondoop .artistas .fotosArtistas .meraghice:hover,
+body .fondocontacto .artistas .fotosArtistas .meraghice:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .artistas .fotosArtistas .sunk,
+body .fondoartistas .artistas .fotosArtistas .sunk,
+body .fondomusica .artistas .fotosArtistas .sunk,
+body .fondoop .artistas .fotosArtistas .sunk,
+body .fondocontacto .artistas .fotosArtistas .sunk {
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .artistas .fotosArtistas .sunk:hover,
+body .fondoartistas .artistas .fotosArtistas .sunk:hover,
+body .fondomusica .artistas .fotosArtistas .sunk:hover,
+body .fondoop .artistas .fotosArtistas .sunk:hover,
+body .fondocontacto .artistas .fotosArtistas .sunk:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .artistas .fotosArtistas .tailagar,
+body .fondoartistas .artistas .fotosArtistas .tailagar,
+body .fondomusica .artistas .fotosArtistas .tailagar,
+body .fondoop .artistas .fotosArtistas .tailagar,
+body .fondocontacto .artistas .fotosArtistas .tailagar {
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .artistas .fotosArtistas .tailagar:hover,
+body .fondoartistas .artistas .fotosArtistas .tailagar:hover,
+body .fondomusica .artistas .fotosArtistas .tailagar:hover,
+body .fondoop .artistas .fotosArtistas .tailagar:hover,
+body .fondocontacto .artistas .fotosArtistas .tailagar:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .artistas .fotosArtistas .xanboii,
+body .fondoartistas .artistas .fotosArtistas .xanboii,
+body .fondomusica .artistas .fotosArtistas .xanboii,
+body .fondoop .artistas .fotosArtistas .xanboii,
+body .fondocontacto .artistas .fotosArtistas .xanboii {
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .artistas .fotosArtistas .xanboii:hover,
+body .fondoartistas .artistas .fotosArtistas .xanboii:hover,
+body .fondomusica .artistas .fotosArtistas .xanboii:hover,
+body .fondoop .artistas .fotosArtistas .xanboii:hover,
+body .fondocontacto .artistas .fotosArtistas .xanboii:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .artistas .fotosArtistas .yungpipe,
+body .fondoartistas .artistas .fotosArtistas .yungpipe,
+body .fondomusica .artistas .fotosArtistas .yungpipe,
+body .fondoop .artistas .fotosArtistas .yungpipe,
+body .fondocontacto .artistas .fotosArtistas .yungpipe {
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .artistas .fotosArtistas .yungpipe:hover,
+body .fondoartistas .artistas .fotosArtistas .yungpipe:hover,
+body .fondomusica .artistas .fotosArtistas .yungpipe:hover,
+body .fondoop .artistas .fotosArtistas .yungpipe:hover,
+body .fondocontacto .artistas .fotosArtistas .yungpipe:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .artistas .fotosArtistas .zisboi,
+body .fondoartistas .artistas .fotosArtistas .zisboi,
+body .fondomusica .artistas .fotosArtistas .zisboi,
+body .fondoop .artistas .fotosArtistas .zisboi,
+body .fondocontacto .artistas .fotosArtistas .zisboi {
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .artistas .fotosArtistas .zisboi:hover,
+body .fondoartistas .artistas .fotosArtistas .zisboi:hover,
+body .fondomusica .artistas .fotosArtistas .zisboi:hover,
+body .fondoop .artistas .fotosArtistas .zisboi:hover,
+body .fondocontacto .artistas .fotosArtistas .zisboi:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .artistas .fotosArtistas .zmokk,
+body .fondoartistas .artistas .fotosArtistas .zmokk,
+body .fondomusica .artistas .fotosArtistas .zmokk,
+body .fondoop .artistas .fotosArtistas .zmokk,
+body .fondocontacto .artistas .fotosArtistas .zmokk {
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .artistas .fotosArtistas .zmokk:hover,
+body .fondoartistas .artistas .fotosArtistas .zmokk:hover,
+body .fondomusica .artistas .fotosArtistas .zmokk:hover,
+body .fondoop .artistas .fotosArtistas .zmokk:hover,
+body .fondocontacto .artistas .fotosArtistas .zmokk:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .tituloMusica,
+body .fondoartistas .tituloMusica,
+body .fondomusica .tituloMusica,
+body .fondoop .tituloMusica,
+body .fondocontacto .tituloMusica {
+  text-align: center;
+  font-size: 55px;
+  padding: 10px;
+  color: #efefef;
+}
+
+body .fondoindex .filtros,
+body .fondoartistas .filtros,
+body .fondomusica .filtros,
+body .fondoop .filtros,
+body .fondocontacto .filtros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .fondoindex .filtros input[type="radio"],
+body .fondoartistas .filtros input[type="radio"],
+body .fondomusica .filtros input[type="radio"],
+body .fondoop .filtros input[type="radio"],
+body .fondocontacto .filtros input[type="radio"] {
+  display: none;
+}
+
+body .fondoindex .filtros .botonfiltro,
+body .fondoartistas .filtros .botonfiltro,
+body .fondomusica .filtros .botonfiltro,
+body .fondoop .filtros .botonfiltro,
+body .fondocontacto .filtros .botonfiltro {
+  margin: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 6px 30px;
+  font-size: 30px;
+  background: #c71216;
+  color: #efefef;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body .fondoindex .temas,
+body .fondoartistas .temas,
+body .fondomusica .temas,
+body .fondoop .temas,
+body .fondocontacto .temas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .fondoindex .temas h4,
+body .fondoartistas .temas h4,
+body .fondomusica .temas h4,
+body .fondoop .temas h4,
+body .fondocontacto .temas h4 {
+  color: #efefef;
+  margin-top: 10px;
+}
+
+body .fondoindex .temas .singles,
+body .fondoartistas .temas .singles,
+body .fondomusica .temas .singles,
+body .fondoop .temas .singles,
+body .fondocontacto .temas .singles {
+  margin: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+body .fondoindex .temas .singles .contrareloj,
+body .fondoartistas .temas .singles .contrareloj,
+body .fondomusica .temas .singles .contrareloj,
+body .fondoop .temas .singles .contrareloj,
+body .fondocontacto .temas .singles .contrareloj {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .temas .singles .contrareloj:hover,
+body .fondoartistas .temas .singles .contrareloj:hover,
+body .fondomusica .temas .singles .contrareloj:hover,
+body .fondoop .temas .singles .contrareloj:hover,
+body .fondocontacto .temas .singles .contrareloj:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .temas .singles .desaparecida,
+body .fondoartistas .temas .singles .desaparecida,
+body .fondomusica .temas .singles .desaparecida,
+body .fondoop .temas .singles .desaparecida,
+body .fondocontacto .temas .singles .desaparecida {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .temas .singles .desaparecida:hover,
+body .fondoartistas .temas .singles .desaparecida:hover,
+body .fondomusica .temas .singles .desaparecida:hover,
+body .fondoop .temas .singles .desaparecida:hover,
+body .fondocontacto .temas .singles .desaparecida:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .temas .singles .fiji,
+body .fondoartistas .temas .singles .fiji,
+body .fondomusica .temas .singles .fiji,
+body .fondoop .temas .singles .fiji,
+body .fondocontacto .temas .singles .fiji {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .temas .singles .fiji:hover,
+body .fondoartistas .temas .singles .fiji:hover,
+body .fondomusica .temas .singles .fiji:hover,
+body .fondoop .temas .singles .fiji:hover,
+body .fondocontacto .temas .singles .fiji:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .temas .singles .lovestar,
+body .fondoartistas .temas .singles .lovestar,
+body .fondomusica .temas .singles .lovestar,
+body .fondoop .temas .singles .lovestar,
+body .fondocontacto .temas .singles .lovestar {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .temas .singles .lovestar:hover,
+body .fondoartistas .temas .singles .lovestar:hover,
+body .fondomusica .temas .singles .lovestar:hover,
+body .fondoop .temas .singles .lovestar:hover,
+body .fondocontacto .temas .singles .lovestar:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .temas .singles .mideseodeañonuevo,
+body .fondoartistas .temas .singles .mideseodeañonuevo,
+body .fondomusica .temas .singles .mideseodeañonuevo,
+body .fondoop .temas .singles .mideseodeañonuevo,
+body .fondocontacto .temas .singles .mideseodeañonuevo {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .temas .singles .mideseodeañonuevo:hover,
+body .fondoartistas .temas .singles .mideseodeañonuevo:hover,
+body .fondomusica .temas .singles .mideseodeañonuevo:hover,
+body .fondoop .temas .singles .mideseodeañonuevo:hover,
+body .fondocontacto .temas .singles .mideseodeañonuevo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .temas .singles .madqst,
+body .fondoartistas .temas .singles .madqst,
+body .fondomusica .temas .singles .madqst,
+body .fondoop .temas .singles .madqst,
+body .fondocontacto .temas .singles .madqst {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .temas .singles .madqst:hover,
+body .fondoartistas .temas .singles .madqst:hover,
+body .fondomusica .temas .singles .madqst:hover,
+body .fondoop .temas .singles .madqst:hover,
+body .fondocontacto .temas .singles .madqst:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .temas .singles .numberone,
+body .fondoartistas .temas .singles .numberone,
+body .fondomusica .temas .singles .numberone,
+body .fondoop .temas .singles .numberone,
+body .fondocontacto .temas .singles .numberone {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .temas .singles .numberone:hover,
+body .fondoartistas .temas .singles .numberone:hover,
+body .fondomusica .temas .singles .numberone:hover,
+body .fondoop .temas .singles .numberone:hover,
+body .fondocontacto .temas .singles .numberone:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .temas .singles .perreotriste,
+body .fondoartistas .temas .singles .perreotriste,
+body .fondomusica .temas .singles .perreotriste,
+body .fondoop .temas .singles .perreotriste,
+body .fondocontacto .temas .singles .perreotriste {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .temas .singles .perreotriste:hover,
+body .fondoartistas .temas .singles .perreotriste:hover,
+body .fondomusica .temas .singles .perreotriste:hover,
+body .fondoop .temas .singles .perreotriste:hover,
+body .fondocontacto .temas .singles .perreotriste:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .temas .singles .sueños,
+body .fondoartistas .temas .singles .sueños,
+body .fondomusica .temas .singles .sueños,
+body .fondoop .temas .singles .sueños,
+body .fondocontacto .temas .singles .sueños {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .temas .singles .sueños:hover,
+body .fondoartistas .temas .singles .sueños:hover,
+body .fondomusica .temas .singles .sueños:hover,
+body .fondoop .temas .singles .sueños:hover,
+body .fondocontacto .temas .singles .sueños:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .temas .eps,
+body .fondoartistas .temas .eps,
+body .fondomusica .temas .eps,
+body .fondoop .temas .eps,
+body .fondocontacto .temas .eps {
+  margin: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+body .fondoindex .temas .eps .perreowaves,
+body .fondoartistas .temas .eps .perreowaves,
+body .fondomusica .temas .eps .perreowaves,
+body .fondoop .temas .eps .perreowaves,
+body .fondocontacto .temas .eps .perreowaves {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body .fondoindex .temas .eps .perreowaves:hover,
+body .fondoartistas .temas .eps .perreowaves:hover,
+body .fondomusica .temas .eps .perreowaves:hover,
+body .fondoop .temas .eps .perreowaves:hover,
+body .fondocontacto .temas .eps .perreowaves:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .fondoindex .onlypalosTitulo,
+body .fondoartistas .onlypalosTitulo,
+body .fondomusica .onlypalosTitulo,
+body .fondoop .onlypalosTitulo,
+body .fondocontacto .onlypalosTitulo {
+  text-align: center;
+  font-size: 55px;
+}
+
+body .fondoindex .historia,
+body .fondoartistas .historia,
+body .fondomusica .historia,
+body .fondoop .historia,
+body .fondocontacto .historia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+body .fondoindex .historia .imagenlogo,
+body .fondoartistas .historia .imagenlogo,
+body .fondomusica .historia .imagenlogo,
+body .fondoop .historia .imagenlogo,
+body .fondocontacto .historia .imagenlogo {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -40px;
+  margin-left: 30px;
+  margin-bottom: 6px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body .fondoindex .historia .imagenlogo .bordehistoria,
+body .fondoartistas .historia .imagenlogo .bordehistoria,
+body .fondomusica .historia .imagenlogo .bordehistoria,
+body .fondoop .historia .imagenlogo .bordehistoria,
+body .fondocontacto .historia .imagenlogo .bordehistoria {
+  border-radius: 150px;
+}
+
+body .fondoindex .historia .historiadelsello,
+body .fondoartistas .historia .historiadelsello,
+body .fondomusica .historia .historiadelsello,
+body .fondoop .historia .historiadelsello,
+body .fondocontacto .historia .historiadelsello {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: start;
+  margin-left: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body .fondoindex .historia .historiadelsello h4,
+body .fondoartistas .historia .historiadelsello h4,
+body .fondomusica .historia .historiadelsello h4,
+body .fondoop .historia .historiadelsello h4,
+body .fondocontacto .historia .historiadelsello h4 {
+  color: #efefef;
+}
+
+@media screen and (min-width: 600px) {
+  body .fondoindex .historia,
+  body .fondoartistas .historia,
+  body .fondomusica .historia,
+  body .fondoop .historia,
+  body .fondocontacto .historia {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+body .fondoindex h2,
+body .fondoartistas h2,
+body .fondomusica h2,
+body .fondoop h2,
+body .fondocontacto h2 {
+  color: #efefef;
+}
+
+body .fondoindex .titulocontacto,
+body .fondoartistas .titulocontacto,
+body .fondomusica .titulocontacto,
+body .fondoop .titulocontacto,
+body .fondocontacto .titulocontacto {
+  text-align: center;
+  font-size: 55px;
+  margin: 10px;
+}
+
+body .fondoindex form,
+body .fondoartistas form,
+body .fondomusica form,
+body .fondoop form,
+body .fondocontacto form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #efefef;
+}
+
+body .fondoindex form input[type="submit"],
+body .fondoartistas form input[type="submit"],
+body .fondomusica form input[type="submit"],
+body .fondoop form input[type="submit"],
+body .fondocontacto form input[type="submit"] {
+  display: none;
+}
+
+body .fondoindex form input[type="reset"],
+body .fondoartistas form input[type="reset"],
+body .fondomusica form input[type="reset"],
+body .fondoop form input[type="reset"],
+body .fondocontacto form input[type="reset"] {
+  display: none;
+}
+
+body .fondoindex form .botonform,
+body .fondoartistas form .botonform,
+body .fondomusica form .botonform,
+body .fondoop form .botonform,
+body .fondocontacto form .botonform {
+  margin: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 6px 40px;
+  font-size: 20px;
+  background: #c71216;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body .fondoindex footer,
+body .fondoartistas footer,
+body .fondomusica footer,
+body .fondoop footer,
+body .fondocontacto footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 30px;
+  color: #efefef;
+}
+
+body .fondoindex footer .redes,
+body .fondoartistas footer .redes,
+body .fondomusica footer .redes,
+body .fondoop footer .redes,
+body .fondocontacto footer .redes {
+  font-size: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-spacing: 20px;
+}
+
+body .fondoindex footer .contacto,
+body .fondoartistas footer .contacto,
+body .fondomusica footer .contacto,
+body .fondoop footer .contacto,
+body .fondocontacto footer .contacto {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+body .fondoindex footer .licencia,
+body .fondoartistas footer .licencia,
+body .fondomusica footer .licencia,
+body .fondoop footer .licencia,
+body .fondocontacto footer .licencia {
+  font-size: 17px;
+}
+/*# sourceMappingURL=styles.css.map */

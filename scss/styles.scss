@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+
+  .fondoindex,
+  .fondoartistas,
+  .fondomusica,
+  .fondoop,
+  .fondocontacto {
+    background-image: url(../assets/images/fondo.png);
+    background-size: 100% 100%;
+
+    header {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-around;
+
+      .navbar-toggler {
+        color: #c71216 !important;
+
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28199, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        }
+      }
+
+      li {
+        display: inline;
+        margin-right: 25px;
+        list-style: none;
+      }
+
+      a {
+        color: #c71216 !important;
+        font-size: 30px;
+        text-decoration: none;
+      }
+    }
+
+    .tituloUltimosLanzamientos {
+      font-size: 55px;
+      text-align: center;
+      margin: 10px;
+      color: #efefef;
+    }
+
+    .ultimosLanzamientos {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .reproductoryt {
+        margin: 20px;
+        width: 330px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+        color: #efefef;
+
+        .tema1 {
+          border-radius: 30px;
+        }
+
+        .tema2 {
+          border-radius: 30px;
+        }
+
+        .tema3 {
+          border-radius: 30px;
+        }
+
+        .tema4 {
+          border-radius: 30px;
+        }
+      }
+    }
+
+    .tituloArtistas {
+      font-size: 55px;
+      text-align: center;
+      padding: 10px;
+      color: #efefef;
+    }
+
+    .artistas {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .fotosArtistas {
+        margin: 20px;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+
+        h4 {
+          color: #efefef;
+          margin-top: 10px;
+        }
+
+        .betrees {
+          border-radius: 20px;
+          transition: transform 0.2s;
+        }
+
+        .betrees:hover {
+          transform: scale(1.05);
+        }
+
+        .cfaravena {
+          border-radius: 20px;
+          transition: transform 0.2s;
+        }
+        .cfaravena:hover {
+          transform: scale(1.05);
+        }
+
+        .izaiah {
+          border-radius: 20px;
+          transition: transform 0.2s;
+        }
+
+        .izaiah:hover {
+          transform: scale(1.05);
+        }
+
+        .meraghice {
+          border-radius: 20px;
+          transition: transform 0.2s;
+        }
+
+        .meraghice:hover {
+          transform: scale(1.05);
+        }
+
+        .sunk {
+          border-radius: 20px;
+          transition: transform 0.2s;
+        }
+
+        .sunk:hover {
+          transform: scale(1.05);
+        }
+
+        .tailagar {
+          border-radius: 20px;
+          transition: transform 0.2s;
+        }
+
+        .tailagar:hover {
+          transform: scale(1.05);
+        }
+
+        .xanboii {
+          border-radius: 20px;
+          transition: transform 0.2s;
+        }
+
+        .xanboii:hover {
+          transform: scale(1.05);
+        }
+
+        .yungpipe {
+          border-radius: 20px;
+          transition: transform 0.2s;
+        }
+
+        .yungpipe:hover {
+          transform: scale(1.05);
+        }
+
+        .zisboi {
+          border-radius: 20px;
+          transition: transform 0.2s;
+        }
+
+        .zisboi:hover {
+          transform: scale(1.05);
+        }
+
+        .zmokk {
+          border-radius: 20px;
+          transition: transform 0.2s;
+        }
+
+        .zmokk:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    .tituloMusica {
+      text-align: center;
+      font-size: 55px;
+      padding: 10px;
+      color: #efefef;
+    }
+
+    .filtros {
+      display: flex;
+      justify-content: center;
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      .botonfiltro {
+        margin: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding: 6px 30px;
+        font-size: 30px;
+        background: #c71216;
+        color: #efefef;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .temas {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      h4 {
+        color: #efefef;
+        margin-top: 10px;
+      }
+
+      .singles {
+        margin: 20px;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+
+        .contrareloj {
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+
+        .contrareloj:hover {
+          transform: scale(1.05);
+        }
+
+        .desaparecida {
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+        .desaparecida:hover {
+          transform: scale(1.05);
+        }
+
+        .fiji {
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+        .fiji:hover {
+          transform: scale(1.05);
+        }
+
+        .lovestar {
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+
+        .lovestar:hover {
+          transform: scale(1.05);
+        }
+
+        .mideseodeañonuevo {
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+
+        .mideseodeañonuevo:hover {
+          transform: scale(1.05);
+        }
+
+        .madqst {
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+
+        .madqst:hover {
+          transform: scale(1.05);
+        }
+
+        .numberone {
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+
+        .numberone:hover {
+          transform: scale(1.05);
+        }
+
+        .perreotriste {
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+
+        .perreotriste:hover {
+          transform: scale(1.05);
+        }
+
+        .sueños {
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+
+        .sueños:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .eps {
+        margin: 20px;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+
+        .perreowaves {
+          border-radius: 10px;
+          transition: transform 0.2s;
+        }
+
+        .perreowaves:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    .onlypalosTitulo {
+      text-align: center;
+      font-size: 55px;
+    }
+
+    .historia {
+      display: flex;
+      margin-bottom: 30px;
+      align-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+
+      .imagenlogo {
+        flex-wrap: wrap;
+        margin-top: -40px;
+        margin-left: 30px;
+        margin-bottom: 6px;
+        align-self: center;
+
+        .bordehistoria {
+          border-radius: 150px;
+        }
+      }
+
+      .historiadelsello {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: start;
+        margin-left: 30px;
+        align-self: center;
+
+        h4 {
+            color: #efefef;
+          }
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      .historia {
+        flex-wrap: nowrap;
+      }
+    }
+
+    h2 {
+      color: #efefef;
+    }
+
+    .titulocontacto {
+        text-align: center;
+        font-size: 55px;
+        margin: 10px;
+      }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      font-size: 20px;
+      color: #efefef;
+
+      input[type="submit"] {
+        display: none;
+      }
+
+      input[type="reset"] {
+        display: none;
+      }
+
+      .botonform {
+        margin: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding: 6px 40px;
+        font-size: 20px;
+        background: #c71216;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+
+    footer {
+      justify-content: space-between;
+      text-align: center;
+      padding: 30px;
+      color: #efefef;
+
+      .redes {
+        font-size: 30px;
+        align-items: center;
+        word-spacing: 20px;
+      }
+
+      .contacto {
+        font-size: 25px;
+        padding-bottom: 10px;
+      }
+
+      .licencia {
+        font-size: 17px;
+      }
+    }
+  }
+}
