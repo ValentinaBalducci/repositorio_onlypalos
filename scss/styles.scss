@@ -1,3 +1,13 @@
+/*Variables*/
+$color-rojo: #c71216;
+$color-blanco: #efefef;
+$singles: (contrareloj: 10px, desaparecida: 10px, fiji: 10px, lovesta: 10px, mideseodeañonuevo: 10px, madqst: 10px, numberone: 10px, perreotriste: 10px );
+
+/*Mixin*/
+@mixin fontsize($size) {
+  font-size:$size ;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +30,7 @@ body {
       justify-content: space-around;
 
       .navbar-toggler {
-        color: #c71216 !important;
+        color: $color-rojo !important;
 
         .navbar-toggler-icon {
           background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28199, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
@@ -34,17 +44,17 @@ body {
       }
 
       a {
-        color: #c71216 !important;
-        font-size: 30px;
+        color: $color-rojo !important;
+        @include fontsize(30px);
         text-decoration: none;
       }
     }
 
     .tituloUltimosLanzamientos {
-      font-size: 55px;
+      @include fontsize(55px);
       text-align: center;
       margin: 10px;
-      color: #efefef;
+      color: $color-blanco;
     }
 
     .ultimosLanzamientos {
@@ -58,32 +68,32 @@ body {
         align-items: center;
         text-align: center;
         margin-bottom: 30px;
-        font-size: 20px;
-        color: #efefef;
+        @include fontsize(20px);
+        color: $color-blanco;
 
         .tema1 {
           border-radius: 30px;
         }
 
         .tema2 {
-          border-radius: 30px;
+          @extend .tema1;
         }
 
         .tema3 {
-          border-radius: 30px;
+          @extend .tema1;
         }
 
         .tema4 {
-          border-radius: 30px;
+          @extend .tema1;
         }
       }
     }
 
     .tituloArtistas {
-      font-size: 55px;
+      @include fontsize(55px);
       text-align: center;
       padding: 10px;
-      color: #efefef;
+      color: $color-blanco;
     }
 
     .artistas {
@@ -95,10 +105,10 @@ body {
         margin: 20px;
         align-items: center;
         text-align: center;
-        font-size: 20px;
+        @include fontsize(20px);
 
         h4 {
-          color: #efefef;
+          color: $color-blanco;
           margin-top: 10px;
         }
 
@@ -195,9 +205,9 @@ body {
 
     .tituloMusica {
       text-align: center;
-      font-size: 55px;
+      @include fontsize(55px);
       padding: 10px;
-      color: #efefef;
+      color: $color-blanco;
     }
 
     .filtros {
@@ -213,9 +223,9 @@ body {
         flex-wrap: wrap;
         margin-top: 20px;
         padding: 6px 30px;
-        font-size: 30px;
-        background: #c71216;
-        color: #efefef;
+        @include fontsize(30px);
+        background: $color-rojo;
+        color: $color-blanco;
         border-radius: 5px;
         cursor: pointer;
       }
@@ -227,7 +237,7 @@ body {
       flex-wrap: wrap;
 
       h4 {
-        color: #efefef;
+        color: $color-blanco;
         margin-top: 10px;
       }
 
@@ -235,10 +245,17 @@ body {
         margin: 20px;
         align-items: center;
         text-align: center;
-        font-size: 20px;
+        @include fontsize(20px);
 
+       @each $temas,
+       $borde in $singles{
+         .#{$temas}{
+           border-radius: $borde;
+         }
+       }
+        
         .contrareloj {
-          border-radius: 10px;
+
           transition: transform 0.2s;
         }
 
@@ -247,7 +264,7 @@ body {
         }
 
         .desaparecida {
-          border-radius: 10px;
+          
           transition: transform 0.2s;
         }
         .desaparecida:hover {
@@ -255,7 +272,7 @@ body {
         }
 
         .fiji {
-          border-radius: 10px;
+          
           transition: transform 0.2s;
         }
         .fiji:hover {
@@ -263,7 +280,7 @@ body {
         }
 
         .lovestar {
-          border-radius: 10px;
+          
           transition: transform 0.2s;
         }
 
@@ -272,7 +289,7 @@ body {
         }
 
         .mideseodeañonuevo {
-          border-radius: 10px;
+          
           transition: transform 0.2s;
         }
 
@@ -281,7 +298,7 @@ body {
         }
 
         .madqst {
-          border-radius: 10px;
+          
           transition: transform 0.2s;
         }
 
@@ -290,7 +307,7 @@ body {
         }
 
         .numberone {
-          border-radius: 10px;
+          
           transition: transform 0.2s;
         }
 
@@ -299,7 +316,7 @@ body {
         }
 
         .perreotriste {
-          border-radius: 10px;
+          
           transition: transform 0.2s;
         }
 
@@ -308,7 +325,7 @@ body {
         }
 
         .sueños {
-          border-radius: 10px;
+          border-radius: map-get($singles, perreotriste);
           transition: transform 0.2s;
         }
 
@@ -321,7 +338,7 @@ body {
         margin: 20px;
         align-items: center;
         text-align: center;
-        font-size: 20px;
+        @include fontsize(20px);
 
         .perreowaves {
           border-radius: 10px;
@@ -336,7 +353,7 @@ body {
 
     .onlypalosTitulo {
       text-align: center;
-      font-size: 55px;
+      @include fontsize(55px);
     }
 
     .historia {
@@ -364,13 +381,13 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 10px;
-        font-size: 20px;
+        @include fontsize(20px);
         text-align: start;
         margin-left: 30px;
         align-self: center;
 
         h4 {
-            color: #efefef;
+            color: $color-blanco;
           }
       }
     }
@@ -382,12 +399,12 @@ body {
     }
 
     h2 {
-      color: #efefef;
+      color: $color-blanco;
     }
 
     .titulocontacto {
         text-align: center;
-        font-size: 55px;
+        @include fontsize(55px);
         margin: 10px;
       }
 
@@ -397,8 +414,8 @@ body {
       justify-content: center;
       text-align: center;
       align-items: center;
-      font-size: 20px;
-      color: #efefef;
+      @include fontsize(20px);
+      color: $color-blanco;
 
       input[type="submit"] {
         display: none;
@@ -413,8 +430,8 @@ body {
         flex-wrap: wrap;
         margin-top: 20px;
         padding: 6px 40px;
-        font-size: 20px;
-        background: #c71216;
+        @include fontsize(20px);
+        background: $color-rojo;
         border-radius: 5px;
         cursor: pointer;
       }
@@ -424,21 +441,21 @@ body {
       justify-content: space-between;
       text-align: center;
       padding: 30px;
-      color: #efefef;
+      color: $color-blanco;
 
       .redes {
-        font-size: 30px;
+        @include fontsize(30px);
         align-items: center;
         word-spacing: 20px;
       }
 
       .contacto {
-        font-size: 25px;
+        @include fontsize(25px);
         padding-bottom: 10px;
       }
 
       .licencia {
-        font-size: 17px;
+        @include fontsize(17px);
       }
     }
   }

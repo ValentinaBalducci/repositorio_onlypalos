@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*Variables*/
+/*Mixin*/
 * {
   margin: 0;
   padding: 0;
@@ -109,34 +111,22 @@ body .fondocontacto .ultimosLanzamientos .reproductoryt {
   color: #efefef;
 }
 
-body .fondoindex .ultimosLanzamientos .reproductoryt .tema1,
+body .fondoindex .ultimosLanzamientos .reproductoryt .tema1, body .fondoindex .ultimosLanzamientos .reproductoryt .tema2, body .fondoindex .ultimosLanzamientos .reproductoryt .tema3, body .fondoindex .ultimosLanzamientos .reproductoryt .tema4,
 body .fondoartistas .ultimosLanzamientos .reproductoryt .tema1,
-body .fondomusica .ultimosLanzamientos .reproductoryt .tema1,
-body .fondoop .ultimosLanzamientos .reproductoryt .tema1,
-body .fondocontacto .ultimosLanzamientos .reproductoryt .tema1 {
-  border-radius: 30px;
-}
-
-body .fondoindex .ultimosLanzamientos .reproductoryt .tema2,
 body .fondoartistas .ultimosLanzamientos .reproductoryt .tema2,
-body .fondomusica .ultimosLanzamientos .reproductoryt .tema2,
-body .fondoop .ultimosLanzamientos .reproductoryt .tema2,
-body .fondocontacto .ultimosLanzamientos .reproductoryt .tema2 {
-  border-radius: 30px;
-}
-
-body .fondoindex .ultimosLanzamientos .reproductoryt .tema3,
 body .fondoartistas .ultimosLanzamientos .reproductoryt .tema3,
-body .fondomusica .ultimosLanzamientos .reproductoryt .tema3,
-body .fondoop .ultimosLanzamientos .reproductoryt .tema3,
-body .fondocontacto .ultimosLanzamientos .reproductoryt .tema3 {
-  border-radius: 30px;
-}
-
-body .fondoindex .ultimosLanzamientos .reproductoryt .tema4,
 body .fondoartistas .ultimosLanzamientos .reproductoryt .tema4,
+body .fondomusica .ultimosLanzamientos .reproductoryt .tema1,
+body .fondomusica .ultimosLanzamientos .reproductoryt .tema2,
+body .fondomusica .ultimosLanzamientos .reproductoryt .tema3,
 body .fondomusica .ultimosLanzamientos .reproductoryt .tema4,
+body .fondoop .ultimosLanzamientos .reproductoryt .tema1,
+body .fondoop .ultimosLanzamientos .reproductoryt .tema2,
+body .fondoop .ultimosLanzamientos .reproductoryt .tema3,
 body .fondoop .ultimosLanzamientos .reproductoryt .tema4,
+body .fondocontacto .ultimosLanzamientos .reproductoryt .tema1,
+body .fondocontacto .ultimosLanzamientos .reproductoryt .tema2,
+body .fondocontacto .ultimosLanzamientos .reproductoryt .tema3,
 body .fondocontacto .ultimosLanzamientos .reproductoryt .tema4 {
   border-radius: 30px;
 }
@@ -489,6 +479,69 @@ body .fondomusica .temas .singles .contrareloj,
 body .fondoop .temas .singles .contrareloj,
 body .fondocontacto .temas .singles .contrareloj {
   border-radius: 10px;
+}
+
+body .fondoindex .temas .singles .desaparecida,
+body .fondoartistas .temas .singles .desaparecida,
+body .fondomusica .temas .singles .desaparecida,
+body .fondoop .temas .singles .desaparecida,
+body .fondocontacto .temas .singles .desaparecida {
+  border-radius: 10px;
+}
+
+body .fondoindex .temas .singles .fiji,
+body .fondoartistas .temas .singles .fiji,
+body .fondomusica .temas .singles .fiji,
+body .fondoop .temas .singles .fiji,
+body .fondocontacto .temas .singles .fiji {
+  border-radius: 10px;
+}
+
+body .fondoindex .temas .singles .lovesta,
+body .fondoartistas .temas .singles .lovesta,
+body .fondomusica .temas .singles .lovesta,
+body .fondoop .temas .singles .lovesta,
+body .fondocontacto .temas .singles .lovesta {
+  border-radius: 10px;
+}
+
+body .fondoindex .temas .singles .mideseodeañonuevo,
+body .fondoartistas .temas .singles .mideseodeañonuevo,
+body .fondomusica .temas .singles .mideseodeañonuevo,
+body .fondoop .temas .singles .mideseodeañonuevo,
+body .fondocontacto .temas .singles .mideseodeañonuevo {
+  border-radius: 10px;
+}
+
+body .fondoindex .temas .singles .madqst,
+body .fondoartistas .temas .singles .madqst,
+body .fondomusica .temas .singles .madqst,
+body .fondoop .temas .singles .madqst,
+body .fondocontacto .temas .singles .madqst {
+  border-radius: 10px;
+}
+
+body .fondoindex .temas .singles .numberone,
+body .fondoartistas .temas .singles .numberone,
+body .fondomusica .temas .singles .numberone,
+body .fondoop .temas .singles .numberone,
+body .fondocontacto .temas .singles .numberone {
+  border-radius: 10px;
+}
+
+body .fondoindex .temas .singles .perreotriste,
+body .fondoartistas .temas .singles .perreotriste,
+body .fondomusica .temas .singles .perreotriste,
+body .fondoop .temas .singles .perreotriste,
+body .fondocontacto .temas .singles .perreotriste {
+  border-radius: 10px;
+}
+
+body .fondoindex .temas .singles .contrareloj,
+body .fondoartistas .temas .singles .contrareloj,
+body .fondomusica .temas .singles .contrareloj,
+body .fondoop .temas .singles .contrareloj,
+body .fondocontacto .temas .singles .contrareloj {
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -509,7 +562,6 @@ body .fondoartistas .temas .singles .desaparecida,
 body .fondomusica .temas .singles .desaparecida,
 body .fondoop .temas .singles .desaparecida,
 body .fondocontacto .temas .singles .desaparecida {
-  border-radius: 10px;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -530,7 +582,6 @@ body .fondoartistas .temas .singles .fiji,
 body .fondomusica .temas .singles .fiji,
 body .fondoop .temas .singles .fiji,
 body .fondocontacto .temas .singles .fiji {
-  border-radius: 10px;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -551,7 +602,6 @@ body .fondoartistas .temas .singles .lovestar,
 body .fondomusica .temas .singles .lovestar,
 body .fondoop .temas .singles .lovestar,
 body .fondocontacto .temas .singles .lovestar {
-  border-radius: 10px;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -572,7 +622,6 @@ body .fondoartistas .temas .singles .mideseodeañonuevo,
 body .fondomusica .temas .singles .mideseodeañonuevo,
 body .fondoop .temas .singles .mideseodeañonuevo,
 body .fondocontacto .temas .singles .mideseodeañonuevo {
-  border-radius: 10px;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -593,7 +642,6 @@ body .fondoartistas .temas .singles .madqst,
 body .fondomusica .temas .singles .madqst,
 body .fondoop .temas .singles .madqst,
 body .fondocontacto .temas .singles .madqst {
-  border-radius: 10px;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -614,7 +662,6 @@ body .fondoartistas .temas .singles .numberone,
 body .fondomusica .temas .singles .numberone,
 body .fondoop .temas .singles .numberone,
 body .fondocontacto .temas .singles .numberone {
-  border-radius: 10px;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -635,7 +682,6 @@ body .fondoartistas .temas .singles .perreotriste,
 body .fondomusica .temas .singles .perreotriste,
 body .fondoop .temas .singles .perreotriste,
 body .fondocontacto .temas .singles .perreotriste {
-  border-radius: 10px;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
