@@ -431,9 +431,8 @@ body {
         margin-top: 20px;
         padding: 6px 40px;
         @include fontsize(20px);
-        background: $color-rojo;
+        background-color: $color-rojo;
         border-radius: 5px;
-        cursor: pointer;
       }
     }
 

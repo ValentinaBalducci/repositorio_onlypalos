@@ -911,9 +911,8 @@ body .fondocontacto form .botonform {
   margin-top: 20px;
   padding: 6px 40px;
   font-size: 20px;
-  background: #c71216;
+  background-color: #c71216;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 body .fondoindex footer,
